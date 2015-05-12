@@ -56,6 +56,7 @@
 		627AAB961B01091200E1045C /* DynamicKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		627AAB9B1B01091200E1045C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		627AAB9C1B01091200E1045C /* DynamicKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicKitDemoTests.m; sourceTree = "<group>"; };
+		62A5044D1B01E6C500AD7250 /* DynamicKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicKitDemo-Prefix.pch"; sourceTree = "<group>"; };
 		A03D0C2B393FC1E86EE0DA12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69313B3B4348F9A61CC9379 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F88CC8DA60BA007E4482F664 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +172,7 @@
 			children = (
 				627AAB811B01091200E1045C /* Info.plist */,
 				627AAB821B01091200E1045C /* main.m */,
+				62A5044D1B01E6C500AD7250 /* DynamicKitDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -448,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "DynamicKitDemo/DynamicKitDemo-Prefix.pch";
 				INFOPLIST_FILE = DynamicKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -460,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "DynamicKitDemo/DynamicKitDemo-Prefix.pch";
 				INFOPLIST_FILE = DynamicKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

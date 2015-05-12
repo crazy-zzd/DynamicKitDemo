@@ -21,7 +21,7 @@
     
     self.view.backgroundColor = [UIColor grayColor];
     
-    [DynamicKitManager makeViewWithTemplateName:@"test"];
+    [self.view addSubview:[DynamicKitManager makeViewWithTemplateName:@"test"]];
 }
 
 - (void)didReceiveMemoryWarning {
