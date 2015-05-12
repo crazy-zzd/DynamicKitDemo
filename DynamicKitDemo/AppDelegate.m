@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,8 +20,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    self.viewController = [[ViewController alloc] initWithNibName:nil bundle:nil];
-    //    self.viewController.title = @"main page";
+    self.viewController = [[MainViewController alloc] initWithNibName:nil bundle:nil];
+    self.viewController.title = @"main page";
     
     self.navController = [[UINavigationController alloc] init];
     [self.navController pushViewController:self.viewController animated:NO];

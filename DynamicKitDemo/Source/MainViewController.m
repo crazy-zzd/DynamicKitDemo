@@ -1,22 +1,23 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  DynamicKitDemo
 //
-//  Created by 朱 俊健 on 15/5/11.
+//  Created by 朱 俊健 on 15/5/12.
 //  Copyright (c) 2015年 朱 俊健. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor grayColor];
 }
 
 - (void)didReceiveMemoryWarning {
