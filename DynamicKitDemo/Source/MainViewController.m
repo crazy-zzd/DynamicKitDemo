@@ -8,6 +8,8 @@
 
 #import "MainViewController.h"
 
+#import "DynamicKitManager.h"
+
 @interface MainViewController ()
 
 @end
@@ -18,11 +20,12 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor grayColor];
+    
+    [DynamicKitManager makeViewWithTemplateName:@"test"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

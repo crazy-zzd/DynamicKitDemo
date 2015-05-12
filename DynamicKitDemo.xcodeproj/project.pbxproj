@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		624F84B01B01BF24002230CA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624F84AF1B01BF24002230CA /* MainViewController.m */; };
 		624F84BE1B01C450002230CA /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 624F84BB1B01C450002230CA /* UIColor+Hex.m */; };
-		624F84BF1B01C450002230CA /* UIView+Additon.m in Sources */ = {isa = PBXBuildFile; fileRef = 624F84BD1B01C450002230CA /* UIView+Additon.m */; };
+		624F84BF1B01C450002230CA /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 624F84BD1B01C450002230CA /* UIView+Additions.m */; };
 		624F84C41B01C496002230CA /* 2.pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 624F84C31B01C496002230CA /* 2.pic.jpg */; };
+		624F84C61B01C669002230CA /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 624F84C51B01C669002230CA /* test.json */; };
+		624F84D01B01C7BE002230CA /* NSObject+DynaKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 624F84CF1B01C7BE002230CA /* NSObject+DynaKit.m */; };
+		624F84D61B01C826002230CA /* NSDictionary+DynaKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 624F84D51B01C826002230CA /* NSDictionary+DynaKit.m */; };
+		624F84D91B01C99C002230CA /* DynamicKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 624F84D81B01C99C002230CA /* DynamicKitManager.m */; };
 		627AAB831B01091200E1045C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 627AAB821B01091200E1045C /* main.m */; };
 		627AAB861B01091200E1045C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 627AAB851B01091200E1045C /* AppDelegate.m */; };
 		627AAB8E1B01091200E1045C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627AAB8D1B01091200E1045C /* Images.xcassets */; };
@@ -33,8 +37,15 @@
 		624F84BA1B01C450002230CA /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Addtionnal Files/UIColor+Hex.h"; sourceTree = "<group>"; };
 		624F84BB1B01C450002230CA /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "Addtionnal Files/UIColor+Hex.m"; sourceTree = "<group>"; };
 		624F84BC1B01C450002230CA /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Additions.h"; path = "Addtionnal Files/UIView+Additions.h"; sourceTree = "<group>"; };
-		624F84BD1B01C450002230CA /* UIView+Additon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Additon.m"; path = "Addtionnal Files/UIView+Additon.m"; sourceTree = "<group>"; };
+		624F84BD1B01C450002230CA /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Additions.m"; path = "Addtionnal Files/UIView+Additions.m"; sourceTree = "<group>"; };
 		624F84C31B01C496002230CA /* 2.pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.pic.jpg; sourceTree = "<group>"; };
+		624F84C51B01C669002230CA /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		624F84CE1B01C7BE002230CA /* NSObject+DynaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DynaKit.h"; sourceTree = "<group>"; };
+		624F84CF1B01C7BE002230CA /* NSObject+DynaKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DynaKit.m"; sourceTree = "<group>"; };
+		624F84D41B01C826002230CA /* NSDictionary+DynaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DynaKit.h"; sourceTree = "<group>"; };
+		624F84D51B01C826002230CA /* NSDictionary+DynaKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DynaKit.m"; sourceTree = "<group>"; };
+		624F84D71B01C99C002230CA /* DynamicKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicKitManager.h; sourceTree = "<group>"; };
+		624F84D81B01C99C002230CA /* DynamicKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicKitManager.m; sourceTree = "<group>"; };
 		627AAB7D1B01091200E1045C /* DynamicKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		627AAB811B01091200E1045C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		627AAB821B01091200E1045C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,18 +78,11 @@
 		624F84B11B01BF28002230CA /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				624F84B21B01C08F002230CA /* DynamicKit */,
+				624F84CD1B01C7BE002230CA /* DynamicKit */,
 				624F84AE1B01BF24002230CA /* MainViewController.h */,
 				624F84AF1B01BF24002230CA /* MainViewController.m */,
 			);
 			name = Source;
-			sourceTree = "<group>";
-		};
-		624F84B21B01C08F002230CA /* DynamicKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = DynamicKit;
 			sourceTree = "<group>";
 		};
 		624F84B31B01C3F4002230CA /* Additional Files */ = {
@@ -87,7 +91,7 @@
 				624F84BA1B01C450002230CA /* UIColor+Hex.h */,
 				624F84BB1B01C450002230CA /* UIColor+Hex.m */,
 				624F84BC1B01C450002230CA /* UIView+Additions.h */,
-				624F84BD1B01C450002230CA /* UIView+Additon.m */,
+				624F84BD1B01C450002230CA /* UIView+Additions.m */,
 			);
 			name = "Additional Files";
 			sourceTree = "<group>";
@@ -96,8 +100,23 @@
 			isa = PBXGroup;
 			children = (
 				624F84C31B01C496002230CA /* 2.pic.jpg */,
+				624F84C51B01C669002230CA /* test.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		624F84CD1B01C7BE002230CA /* DynamicKit */ = {
+			isa = PBXGroup;
+			children = (
+				624F84CE1B01C7BE002230CA /* NSObject+DynaKit.h */,
+				624F84CF1B01C7BE002230CA /* NSObject+DynaKit.m */,
+				624F84D41B01C826002230CA /* NSDictionary+DynaKit.h */,
+				624F84D51B01C826002230CA /* NSDictionary+DynaKit.m */,
+				624F84D71B01C99C002230CA /* DynamicKitManager.h */,
+				624F84D81B01C99C002230CA /* DynamicKitManager.m */,
+			);
+			name = DynamicKit;
+			path = Source/DynamicKit;
 			sourceTree = "<group>";
 		};
 		627AAB741B01091100E1045C = {
@@ -123,9 +142,9 @@
 			children = (
 				627AAB841B01091200E1045C /* AppDelegate.h */,
 				627AAB851B01091200E1045C /* AppDelegate.m */,
-				624F84C01B01C481002230CA /* Resources */,
-				624F84B31B01C3F4002230CA /* Additional Files */,
 				624F84B11B01BF28002230CA /* Source */,
+				624F84B31B01C3F4002230CA /* Additional Files */,
+				624F84C01B01C481002230CA /* Resources */,
 				627AAB8D1B01091200E1045C /* Images.xcassets */,
 				627AAB801B01091200E1045C /* Supporting Files */,
 			);
@@ -240,6 +259,7 @@
 			files = (
 				624F84C41B01C496002230CA /* 2.pic.jpg in Resources */,
 				627AAB8E1B01091200E1045C /* Images.xcassets in Resources */,
+				624F84C61B01C669002230CA /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +278,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				627AAB861B01091200E1045C /* AppDelegate.m in Sources */,
+				624F84D61B01C826002230CA /* NSDictionary+DynaKit.m in Sources */,
 				624F84BE1B01C450002230CA /* UIColor+Hex.m in Sources */,
+				624F84D01B01C7BE002230CA /* NSObject+DynaKit.m in Sources */,
 				627AAB831B01091200E1045C /* main.m in Sources */,
-				624F84BF1B01C450002230CA /* UIView+Additon.m in Sources */,
+				624F84BF1B01C450002230CA /* UIView+Additions.m in Sources */,
+				624F84D91B01C99C002230CA /* DynamicKitManager.m in Sources */,
 				624F84B01B01BF24002230CA /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
