@@ -50,7 +50,19 @@
     UIView * returnView = (UIView *)generateObject;
     [self loadPropertiesWithDict:contentDict toView:returnView];
 
-    //TODO: 递归加入subviews
+    
+    // 加入子视图
+    if ([contentDict.allKeys containsObject:@"_subviews"] && [[contentDict objectForKey:@"_subviews"] isKindOfClass:[NSArray class]]) {
+        
+        NSArray * subviewArray = [contentDict objectForKey:@"_subviews"];
+        
+        for (id theObject in subviewArray) {
+            if ([theObject isKindOfClass:[NSDictionary class]]) {
+                NSDictionary * theSubviewDict = (NSDictionary *)theObject;
+                [returnView addSubview:[theSubviewDict toViewItem]];
+            }
+        }
+    }
     
     return returnView;
 }
@@ -99,9 +111,15 @@
 /**
  *  对特殊处理的字段进行分配处理
  */
+/**
+ *  对特殊处理的字段进行分配处理
+ *
+ *  @return <#return value description#>
+ */
 - (id)specialKey:(NSString *)theKey value:(id)theValue toView:(UIView *)theView
 {
     if ([theKey hasSuffix:@"Color"]) {
+        // ****Color情况
         return [self setBackgroundColorWith:theValue toView:theView];
     }
     
@@ -109,7 +127,7 @@
 }
 
 /**
- *  处理 *backgroundColor 情况
+ *  处理 ****Color 情况
  *
  *  @param theValue 颜色值String
  *  @param theView  需要赋值的View
@@ -122,6 +140,7 @@
     
     NSString * theColorStr = (NSString *)theValue;
     
+    // example : rgba_255_255_255_255
     NSArray * theWordArray = [theColorStr componentsSeparatedByString:@"_"];
     if (theWordArray.count == 5) {
         
