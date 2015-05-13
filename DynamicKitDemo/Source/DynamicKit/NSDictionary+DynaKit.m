@@ -11,6 +11,7 @@
 
 @implementation NSDictionary (DynaKit)
 
+#pragma mark - public methods
 - (UIView *)toViewItem
 {
     // 首先判断是不是单个Key-Value，正确格式应该是单个
@@ -67,6 +68,7 @@
     return returnView;
 }
 
+#pragma mark - private methods
 /**
  *  把Dict中的属性都动态赋值给View
  *

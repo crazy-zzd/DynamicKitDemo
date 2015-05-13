@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6233C3F41B02DFB300532F13 /* UIImageView+DynaKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6233C3F31B02DFB300532F13 /* UIImageView+DynaKit.m */; };
+		6233C4001B02E87500532F13 /* UIButton+DynaKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6233C3FF1B02E87500532F13 /* UIButton+DynaKit.m */; };
 		624F84B01B01BF24002230CA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624F84AF1B01BF24002230CA /* MainViewController.m */; };
 		624F84BE1B01C450002230CA /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 624F84BB1B01C450002230CA /* UIColor+Hex.m */; };
 		624F84BF1B01C450002230CA /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 624F84BD1B01C450002230CA /* UIView+Additions.m */; };
@@ -33,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6233C3F21B02DFB300532F13 /* UIImageView+DynaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DynaKit.h"; sourceTree = "<group>"; };
+		6233C3F31B02DFB300532F13 /* UIImageView+DynaKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DynaKit.m"; sourceTree = "<group>"; };
+		6233C3FE1B02E87500532F13 /* UIButton+DynaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DynaKit.h"; sourceTree = "<group>"; };
+		6233C3FF1B02E87500532F13 /* UIButton+DynaKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DynaKit.m"; sourceTree = "<group>"; };
 		624F84AE1B01BF24002230CA /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Source/MainViewController.h; sourceTree = "<group>"; };
 		624F84AF1B01BF24002230CA /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Source/MainViewController.m; sourceTree = "<group>"; };
 		624F84BA1B01C450002230CA /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Addtionnal Files/UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -126,6 +132,10 @@
 				624F84CF1B01C7BE002230CA /* NSObject+DynaKit.m */,
 				624F84D41B01C826002230CA /* NSDictionary+DynaKit.h */,
 				624F84D51B01C826002230CA /* NSDictionary+DynaKit.m */,
+				6233C3F21B02DFB300532F13 /* UIImageView+DynaKit.h */,
+				6233C3F31B02DFB300532F13 /* UIImageView+DynaKit.m */,
+				6233C3FE1B02E87500532F13 /* UIButton+DynaKit.h */,
+				6233C3FF1B02E87500532F13 /* UIButton+DynaKit.m */,
 				624F84D71B01C99C002230CA /* DynamicKitManager.h */,
 				624F84D81B01C99C002230CA /* DynamicKitManager.m */,
 			);
@@ -338,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6233C3F41B02DFB300532F13 /* UIImageView+DynaKit.m in Sources */,
 				627AAB861B01091200E1045C /* AppDelegate.m in Sources */,
 				624F84D61B01C826002230CA /* NSDictionary+DynaKit.m in Sources */,
 				624F84BE1B01C450002230CA /* UIColor+Hex.m in Sources */,
@@ -345,6 +356,7 @@
 				627AAB831B01091200E1045C /* main.m in Sources */,
 				624F84BF1B01C450002230CA /* UIView+Additions.m in Sources */,
 				624F84D91B01C99C002230CA /* DynamicKitManager.m in Sources */,
+				6233C4001B02E87500532F13 /* UIButton+DynaKit.m in Sources */,
 				624F84B01B01BF24002230CA /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

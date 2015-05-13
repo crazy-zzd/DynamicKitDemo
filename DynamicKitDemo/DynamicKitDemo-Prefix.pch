@@ -16,4 +16,8 @@
 
 #import "UIView+Additions.h"
 #import "UIColor+Hex.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+
+#define DK_BRIDGE(x) ((__bridge void*)x)
 #endif
