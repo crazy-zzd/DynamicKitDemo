@@ -12,6 +12,8 @@
 
 @interface MainViewController ()
 
+@property (nonatomic, strong) UIScrollView * mainScrollView;
+
 @end
 
 @implementation MainViewController
@@ -23,7 +25,9 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self.view addSubview:[DynamicKitManager makeViewWithTemplateName:@"test"]];
+    [self.view addSubview:self.mainScrollView];
+    
+    [self addDynamicViewWithTemplateName:@"test"];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -37,4 +41,22 @@
     [super didReceiveMemoryWarning];
 }
 
+- (UIScrollView *)mainScrollView
+{
+    if (!_mainScrollView) {
+        _mainScrollView = [[UIScrollView alloc] initWithFrame:self.view.frame];
+        _mainScrollView.showsVerticalScrollIndicator = NO;
+    }
+    
+    return _mainScrollView;
+}
+
+- (void)addDynamicViewWithTemplateName:(NSString *)theName
+{
+    UIView * theDynaView = [DynamicKitManager makeViewWithTemplateName:theName];
+    
+    self.mainScrollView.contentSize = CGSizeMake(theDynaView.width, theDynaView.height);
+    
+    [self.mainScrollView addSubview:theDynaView];
+}
 @end

@@ -23,6 +23,7 @@
 		627AAB9D1B01091200E1045C /* DynamicKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 627AAB9C1B01091200E1045C /* DynamicKitDemoTests.m */; };
 		628EDCD41B02F08600FF7E47 /* DynaKitWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628EDCD31B02F08600FF7E47 /* DynaKitWebViewController.m */; };
 		628EDCD71B02F59700FF7E47 /* DynamicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628EDCD61B02F59700FF7E47 /* DynamicNavigationController.m */; };
+		62C3F5BD1B03351E0058EC95 /* UITextView+DynaKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3F5BC1B03351E0058EC95 /* UITextView+DynaKit.m */; };
 		AAA2A0500A75C8F2485B162C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A03D0C2B393FC1E86EE0DA12 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		628EDCD51B02F59700FF7E47 /* DynamicNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicNavigationController.h; sourceTree = "<group>"; };
 		628EDCD61B02F59700FF7E47 /* DynamicNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicNavigationController.m; sourceTree = "<group>"; };
 		62A5044D1B01E6C500AD7250 /* DynamicKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		62C3F5BB1B03351E0058EC95 /* UITextView+DynaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+DynaKit.h"; sourceTree = "<group>"; };
+		62C3F5BC1B03351E0058EC95 /* UITextView+DynaKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+DynaKit.m"; sourceTree = "<group>"; };
 		A03D0C2B393FC1E86EE0DA12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69313B3B4348F9A61CC9379 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F88CC8DA60BA007E4482F664 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				6233C3F31B02DFB300532F13 /* UIImageView+DynaKit.m */,
 				6233C3FE1B02E87500532F13 /* UIButton+DynaKit.h */,
 				6233C3FF1B02E87500532F13 /* UIButton+DynaKit.m */,
+				62C3F5BB1B03351E0058EC95 /* UITextView+DynaKit.h */,
+				62C3F5BC1B03351E0058EC95 /* UITextView+DynaKit.m */,
 				624F84D71B01C99C002230CA /* DynamicKitManager.h */,
 				624F84D81B01C99C002230CA /* DynamicKitManager.m */,
 			);
@@ -371,6 +376,7 @@
 				627AAB861B01091200E1045C /* AppDelegate.m in Sources */,
 				624F84D61B01C826002230CA /* NSDictionary+DynaKit.m in Sources */,
 				624F84BE1B01C450002230CA /* UIColor+Hex.m in Sources */,
+				62C3F5BD1B03351E0058EC95 /* UITextView+DynaKit.m in Sources */,
 				624F84D01B01C7BE002230CA /* NSObject+DynaKit.m in Sources */,
 				627AAB831B01091200E1045C /* main.m in Sources */,
 				624F84BF1B01C450002230CA /* UIView+Additions.m in Sources */,

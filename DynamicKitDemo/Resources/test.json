@@ -5,7 +5,7 @@
     "y": "0",
     "width": "320",
     "height": "1000",
-    "*backgroundColor": "rgba_213_213_1_80",
+    "*backgroundColor": "rgba_255_255_255_255",
     "_subviews": [
       {
         "DKViewItem": {
@@ -36,6 +36,32 @@
           "y": "200",
           "imageUrl": "https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=002784a347a7d933bffdb733cb76e521/35a85edf8db1cb1346c082a4d854564e93584bdf.jpg",
           "url": "http://www.baidu.com"
+        }
+      },
+      {
+        "DKViewItem": {
+          "_ItemClass": "UIView",
+          "x": "0",
+          "y": "400",
+          "width": "320",
+          "height": "0.5",
+          "*backgroundColor": "rgba_1_1_1_255"
+        }
+      },
+      {
+        "DKViewItem": {
+          "_ItemClass": "UITextView",
+          "x": "0",
+          "y": "400",
+          "width": "320",
+          "height": "40",
+          "*backgroundColor": "rgba_120_32_222_211",
+          "*textColor": "rgba_1_1_1_255",
+          "text": "wtf!!!",
+          "fontSize": "20",
+          "editable": false,
+          "selectable": false,
+          "textAlignment": "1"
         }
       }
     ]
