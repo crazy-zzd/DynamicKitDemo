@@ -10,6 +10,8 @@
 
 @interface UIButton (DynaKit)
 
-@property (nonatomic, strong) NSString * imageUrl;
+@property (nonatomic, copy) NSString * imageUrl;
+
+@property (nonatomic, copy) NSString * url;
 
 @end

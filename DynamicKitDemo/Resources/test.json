@@ -11,7 +11,7 @@
         "DKViewItem": {
           "_ItemClass": "UIButton",
           "x": "0",
-          "y": "100",
+          "y": "0",
           "width": "100",
           "height": "30",
           "*backgroundColor": "rgba_0_244_222_255"
@@ -23,7 +23,7 @@
           "width": "200",
           "height": "200",
           "x": "100",
-          "y": "100",
+          "y": "0",
           "imageUrl": "https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=db015ac4a84bd1130498e4723c92903d/48540923dd54564e81cc5a8eb6de9c82d0584fdf.jpg"
         }
       },
@@ -33,8 +33,9 @@
           "width": "200",
           "height": "200",
           "x": "100",
-          "y": "300",
-          "imageUrl": "https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=002784a347a7d933bffdb733cb76e521/35a85edf8db1cb1346c082a4d854564e93584bdf.jpg"
+          "y": "200",
+          "imageUrl": "https://ss0.baidu.com/7Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=002784a347a7d933bffdb733cb76e521/35a85edf8db1cb1346c082a4d854564e93584bdf.jpg",
+          "url": "http://www.baidu.com"
         }
       }
     ]

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DynamicNavigationController.h"
 #import "MainViewController.h"
 
 @interface AppDelegate ()
@@ -21,9 +22,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     self.viewController = [[MainViewController alloc] initWithNibName:nil bundle:nil];
-    self.viewController.title = @"main page";
     
-    self.navController = [[UINavigationController alloc] init];
+    self.navController = [DynamicNavigationController sharedInstance];
     [self.navController pushViewController:self.viewController animated:NO];
     
     //    [self.window addSubview:self.navController.view];

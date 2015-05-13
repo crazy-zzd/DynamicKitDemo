@@ -21,6 +21,8 @@
 		627AAB861B01091200E1045C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 627AAB851B01091200E1045C /* AppDelegate.m */; };
 		627AAB8E1B01091200E1045C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627AAB8D1B01091200E1045C /* Images.xcassets */; };
 		627AAB9D1B01091200E1045C /* DynamicKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 627AAB9C1B01091200E1045C /* DynamicKitDemoTests.m */; };
+		628EDCD41B02F08600FF7E47 /* DynaKitWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628EDCD31B02F08600FF7E47 /* DynaKitWebViewController.m */; };
+		628EDCD71B02F59700FF7E47 /* DynamicNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628EDCD61B02F59700FF7E47 /* DynamicNavigationController.m */; };
 		AAA2A0500A75C8F2485B162C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A03D0C2B393FC1E86EE0DA12 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,10 @@
 		627AAB961B01091200E1045C /* DynamicKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		627AAB9B1B01091200E1045C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		627AAB9C1B01091200E1045C /* DynamicKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicKitDemoTests.m; sourceTree = "<group>"; };
+		628EDCD21B02F08600FF7E47 /* DynaKitWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynaKitWebViewController.h; sourceTree = "<group>"; };
+		628EDCD31B02F08600FF7E47 /* DynaKitWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynaKitWebViewController.m; sourceTree = "<group>"; };
+		628EDCD51B02F59700FF7E47 /* DynamicNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicNavigationController.h; sourceTree = "<group>"; };
+		628EDCD61B02F59700FF7E47 /* DynamicNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicNavigationController.m; sourceTree = "<group>"; };
 		62A5044D1B01E6C500AD7250 /* DynamicKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicKitDemo-Prefix.pch"; sourceTree = "<group>"; };
 		A03D0C2B393FC1E86EE0DA12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69313B3B4348F9A61CC9379 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 		624F84B11B01BF28002230CA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				628EDCD11B02F06A00FF7E47 /* DynamicKitDemo */,
 				624F84CD1B01C7BE002230CA /* DynamicKit */,
 				624F84AE1B01BF24002230CA /* MainViewController.h */,
 				624F84AF1B01BF24002230CA /* MainViewController.m */,
@@ -202,6 +209,18 @@
 				627AAB9B1B01091200E1045C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		628EDCD11B02F06A00FF7E47 /* DynamicKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				628EDCD21B02F08600FF7E47 /* DynaKitWebViewController.h */,
+				628EDCD31B02F08600FF7E47 /* DynaKitWebViewController.m */,
+				628EDCD51B02F59700FF7E47 /* DynamicNavigationController.h */,
+				628EDCD61B02F59700FF7E47 /* DynamicNavigationController.m */,
+			);
+			name = DynamicKitDemo;
+			path = Source/DynamicKitDemo;
 			sourceTree = "<group>";
 		};
 		98F545F803C3565752C7B479 /* Pods */ = {
@@ -355,7 +374,9 @@
 				624F84D01B01C7BE002230CA /* NSObject+DynaKit.m in Sources */,
 				627AAB831B01091200E1045C /* main.m in Sources */,
 				624F84BF1B01C450002230CA /* UIView+Additions.m in Sources */,
+				628EDCD41B02F08600FF7E47 /* DynaKitWebViewController.m in Sources */,
 				624F84D91B01C99C002230CA /* DynamicKitManager.m in Sources */,
+				628EDCD71B02F59700FF7E47 /* DynamicNavigationController.m in Sources */,
 				6233C4001B02E87500532F13 /* UIButton+DynaKit.m in Sources */,
 				624F84B01B01BF24002230CA /* MainViewController.m in Sources */,
 			);
