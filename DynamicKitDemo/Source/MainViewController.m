@@ -19,9 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationController.navigationBarHidden = YES;
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:[DynamicKitManager makeViewWithTemplateName:@"test"]];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    if (self.navigationController.navigationBar.hidden == NO) {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

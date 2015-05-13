@@ -36,8 +36,6 @@
         [self.webview loadRequest:request];
         [self.view addSubview:self.webview];
     }
-    
-    [self.navigationController.navigationBar setHidden:NO];
 }
 
 - (UIWebView *)webview

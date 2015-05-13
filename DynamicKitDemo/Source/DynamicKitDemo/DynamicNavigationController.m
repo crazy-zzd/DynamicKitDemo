@@ -27,5 +27,10 @@
 {
     DynaKitWebViewController * theWebVC = [[DynaKitWebViewController alloc] initWithUrl:theUrl];
     [self pushViewController:theWebVC animated:YES];
+    
+    // 导航栏出现
+    if (self.navigationBarHidden == YES) {
+        [self setNavigationBarHidden:NO animated:YES];
+    }
 }
 @end
