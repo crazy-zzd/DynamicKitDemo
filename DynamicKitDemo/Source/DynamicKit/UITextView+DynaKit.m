@@ -16,6 +16,7 @@ static NSString * kDynaKitTextFontName = @"dynaKitTextFontName";
 static NSString * kDynaKitTextFontSize = @"dynaKitTextFontSize";
 
 #pragma mark - public methods
+
 - (void)setFontName:(NSString *)fontName
 {
     objc_setAssociatedObject(self, DK_BRIDGE(kDynaKitTextFontName), fontName, OBJC_ASSOCIATION_COPY_NONATOMIC);
