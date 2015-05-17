@@ -9,10 +9,14 @@
 #import "MainViewController.h"
 
 #import "DynamicKitManager.h"
+#import "MJRefresh.h"
+
 
 @interface MainViewController ()
 
 @property (nonatomic, strong) UIScrollView * mainScrollView;
+
+@property (nonatomic, strong) UIView * statusBarView;
 
 @end
 
@@ -26,8 +30,14 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.mainScrollView];
+    [self.view addSubview:self.statusBarView];
     
     [self addDynamicViewWithTemplateName:@"test"];
+    
+    __weak MainViewController * weakSelf = self;
+    [self.mainScrollView addLegendHeaderWithRefreshingBlock:^{
+        [weakSelf addDynamicViewWithTemplateName:@"test"];
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -51,12 +61,30 @@
     return _mainScrollView;
 }
 
+- (UIView *)statusBarView
+{
+    if (!_statusBarView) {
+        _statusBarView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 20)];
+        _statusBarView.backgroundColor = [UIColor whiteColor];
+    }
+    
+    return _statusBarView;
+}
+
 - (void)addDynamicViewWithTemplateName:(NSString *)theName
 {
+    const NSInteger viewTag = 111;
     UIView * theDynaView = [DynamicKitManager makeViewWithTemplateName:theName];
+    theDynaView.tag = viewTag;
     
     self.mainScrollView.contentSize = CGSizeMake(theDynaView.width, theDynaView.height);
     
+    UIView * oldView = [self.mainScrollView viewWithTag:viewTag];
+    if (oldView) {
+        [oldView removeFromSuperview];
+    }
     [self.mainScrollView addSubview:theDynaView];
+    
+    [self.mainScrollView.header endRefreshing];
 }
 @end
